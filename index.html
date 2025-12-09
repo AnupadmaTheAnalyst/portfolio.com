@@ -1,130 +1,316 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Turning Data Into Decisions-Anupadma S</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turning Data Into Decisions — Anupadma S</title>
+  <meta name="description" content="Portfolio of Anupadma S — Data Analyst skilled in Power BI, Excel, SQL, Python. Projects: Healthcare Power BI, AdventureWorks Excel, SQL COVID-19 exploration." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#00b0ff;--muted:#94a3b8;--glass:rgba(255,255,255,0.03);}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;margin:0;background:linear-gradient(180deg,#071022 0%, #081226 60%);color:#e6eef6;line-height:1.5}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{font-weight:700;font-size:3rem;letter-spacing:0.4px}
+    nav a{margin-left:18px;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:28px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-flex;gap:10px}
+    .btn{background:var(--accent);color:#051025;padding:10px 14px;border-radius:8px;font-weight:600}
+    .ghost{border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:8px;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .skills{display:flex;gap:12px;flex-wrap:wrap}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:600;font-size:13px}
+    section + section{margin-top:24px}
+    h2.section{font-size:18px;margin:0 0 12px}
+    /* Background matching your original portfolio */
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Turning Data Into Decisions-Anupadma S<br />
-						</h1>
-						<p>Data Analyst skilled in Excel, SQL, Power BI and Python <a href="https://github.com/AnupadmaTheAnalyst">@AnupadmaTheAnalyst</a> </p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+/* Project page styling */
+.project-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Anupadma The Analyst</a>
-					</header>
+.project-section {
+    background: white;
+    padding: 25px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Resize all dashboard images */
+.project-image {
+    max-width: 100%
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/anupadma2002/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/AnupadmaTheAnalyst" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+/* Button styling (matching your main page) */
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 22px;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
-				<!-- Main -->
-					<div id="main">
+.btn:hover {
+    background: #005fcc;
+}
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration">SQL Data Exploration-COVID-19 Dataset<br />
-									</a></h2>
-									<p>SQL Data Exploration analyzing global COVID-19 data using MySQL.</p>
-								</header>
-								<a href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" class="image main"><img src="images/COVID.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" class="button large">View Project</a></li>
-								</ul>
-							</article>
-							<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard">Healthcare Provider Performance Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" class="image main"><img src="images/powerbi.jpg" alt="" /></a>
-									<p>Data-driven healthcare insights through dynamic Power BI dashboard.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnupadmaTheAnalyst/adventureworks-sales-analysis">AdventureWorks Sales Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnupadmaTheAnalyst/adventureworks-sales-analysis" class="image main"><img src="images/Dashboard profile.jpg" alt="" /></a>
-									<p>An interactive Excel dashboard analyzing AdventureWorks sales data.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AnupadmaTheAnalyst/adventureworks-sales-analysis" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>Marthandam<br />
-								Kanyakumari District, Tamilnadu.<br /> Pin: 629162</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+91 6374737891</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">padmaanu8@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/anupadma2002/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/AnupadmaTheAnalyst" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+	.social-icons {
+margin-top: 5px;
+display: flex;
+gap: 5px;
+}
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
 
-			</div>
+.social-icons img {
+width: 100%;
+    max-width: 220px;   /* SMALL IMAGE SIZE */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .project .title{font-weight:700;margin:0 0 6px}
+    .project p{color:var(--muted);margin:0 0 10px}
+	.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+.project-card {
+    background: #ffffff;
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 
-	</body>
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    height: 150px;   /* ← set a fixed equal height */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin: 10px 0 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;    /* ensures descriptions stretch equally */
+}
+
+.project-card .btn {
+    align-self: center;  /* centers the button */
+}
+
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .actions{margin-top:12px;display:flex;gap:8px}
+    footer{border-top:1px solid rgba(255,255,255,0.03);padding:18px 0;margin-top:32px;color:var(--muted);text-align:center}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.contact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Anupadma S</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Turning Data Into Decisions</h1>
+          <p>Data Analyst skilled in Excel, SQL, Power BI and Python. I build clear dashboards, write efficient SQL, and transform messy data into actionable insights.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="ghost" href="Anupadma_Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <div style="margin-top:20px;">
+            <div style="font-weight:700;margin-bottom:8px">Quick Highlights</div>
+            <div class="skills">
+              <span class="skill">Power BI</span>
+              <span class="skill">Excel</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">DAX</span>
+              <span class="skill">Power Query</span>
+              <span class="skill">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div style="font-weight:700">Contact</div>
+          <div class="meta" style="margin-top:8px">Marthandam, Kanyakumari, Tamil Nadu<br/>Pin: 629162</div>
+          <div class="meta" style="margin-top:8px">Phone: +91 6374737891</div>
+          <div class="meta">Email: <a href="mailto:padmaanu8@gmail.com">padmaanu8@gmail.com</a></div>
+
+          <div class="actions" style="margin-top:14px; display:flex; gap:10px;">
+  <a class="ghost" href="https://github.com/AnupadmaTheAnalyst" target="_blank" 
+     style="background-color:white; padding:4px; border-radius:4px; display:inline-block;">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" 
+         style="width:20px; height:20px; display:block;" />
+  </a>
+
+  <a class="ghost" href="https://www.linkedin.com/in/anupadma2002/" target="_blank" 
+     style="background-color:white; padding:4px; border-radius:4px; display:inline-block;">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" 
+         style="width:20px; height:20px; display:block;" />
+  </a>
+</div>
+
+
+
+        </aside>
+      </section>
+
+      <section id="projects">
+        <h2 class="section">Projects</h2>
+        <div class="project-grid">
+
+
+<!-- PROJECT 1 -->
+<div class="project-card">
+<a href="healthcare.html" target="_blank">
+<img src="images/Detail_Light.png" alt="Healthcare Project">
+</a>
+<h3>Healthcare Provider Performance Analysis</h3>
+<p>Power BI dashboard showing KPIs, provider efficiency & actionable insights.</p>
+<a class="btn" href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" target="_blank">View Project</a>
+</div>
+
+
+<!-- PROJECT 2 -->
+ <div class="project-card">
+<a href="covid.html" target="_blank">
+<img src="images/COVID.jpg" alt="COVID SQL Project">
+</a>
+<h3>COVID‑19 SQL Data Exploration</h3>
+<p>SQL-based global COVID‑19 exploration including cases & vaccination trends.</p>
+<a class="btn" href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" target="_blank">View Project</a>
+</div>
+
+<!-- PROJECT 3 -->
+<div class="project-card">
+<a href="adventureworks.html" target="_blank">
+<img src="images/Dashboard_Preview.png" alt="AdventureWorks Project">
+</a>
+<h3>AdventureWorks Sales Analysis</h3>
+<p>Interactive Excel dashboard providing insights into sales trends, and year over year growth metrics.</p>
+<a class="btn" href="https://github.com/AnupadmaTheAnalyst/adventureworks-sales-analysis" target="_blank">View Project</a>
+</div>
+
+
+</div>
+      </section>
+
+      <section id="about">
+        <h2 class="section">About Me</h2>
+        <div class="card">
+          <p>I am a data analyst focused on converting messy data into clear, actionable reports. I enjoy problem solving, building dashboards that tell a story, and writing SQL queries that produce reliable insights. I am actively seeking fresher Data Analyst roles where I can apply Power BI, Excel and SQL to real business problems.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section">Skills</h2>
+        <div class="card">
+          <div style="display:flex;gap:18px;flex-wrap:wrap">
+            <div style="min-width:220px">
+              <strong>Technical</strong>
+              <div class="meta">Power BI, Excel, MySQL, SQL, Power Query, DAX, Python</div>
+            </div>
+            <div style="min-width:220px">
+              <strong>BI & Reporting</strong>
+              <div class="meta">Dashboard Design, KPI Development, Report Automation, Data Modeling</div>
+            </div>
+            <div style="min-width:220px">
+              <strong>Soft Skills</strong>
+              <div class="meta">Analytical Thinking, Problem Solving, Communication, Time Management</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section">Contact</h2>
+        <div class="card contact-grid">
+          <div>
+            <strong>Email</strong>
+            <div class="meta"><a href="mailto:padmaanu8@gmail.com">padmaanu8@gmail.com</a></div>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <div class="meta">+91 6374737891</div>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <div class="meta">Marthandam, Kanyakumari District, Tamil Nadu</div>
+          </div>
+          <div>
+            <strong>Social</strong>
+            <div class="actions" style="margin-top:14px; display:flex; gap:10px;">
+  <a class="ghost" href="https://github.com/AnupadmaTheAnalyst" target="_blank" 
+     style="background-color:white; padding:4px; border-radius:4px; display:inline-block;">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" 
+         style="width:20px; height:20px; display:block;" />
+  </a>
+
+  <a class="ghost" href="https://www.linkedin.com/in/anupadma2002/" target="_blank" 
+     style="background-color:white; padding:4px; border-radius:4px; display:inline-block;">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" 
+         style="width:20px; height:20px; display:block;" />
+  </a>
+</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© 2025 Anupadma S. All rights reserved. • Designed for data storytelling.</div>
+    </footer>
+
+  </div>
+</body>
 </html>

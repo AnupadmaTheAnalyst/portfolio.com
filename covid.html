@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 SQL Data Exploration – Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+    background-color:#0f1724;
+    font-family:Inter,Arial;
+}
+@media (max-width: 600px) {
+    .project-section {
+        margin: 15px;
+    }
+}
+/* Card-like section */
+.project-section{
+    background:white;
+    padding:25px;
+    margin:20px auto;
+    max-width:900px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Hero section */
+.project-hero{
+    background:white;
+    padding:40px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:30px auto;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image resize */
+.project-image{
+    width:96%;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Button style */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+.btn:hover{
+    background:#005fcc;
+}
+</style>
+</head>
+
+<body>
+
+<section class="project-hero">
+    <h1>COVID-19 SQL Data Exploration</h1>
+    <p>A deep-dive SQL case study highlighting infection patterns, vaccination progress, and global risk indicators.</p>
+</section>
+
+<section class="project-section">
+    <h2>📘 Project Overview</h2>
+    <p>
+        This project explores worldwide COVID-19 trends using MySQL. By analyzing two datasets such as coviddeaths and 
+        covidvaccinations, I uncovered patterns in infection rates, mortality, and vaccination progress.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>📊 Case Study: From Data to Public Health Intelligence</h2>
+
+    <h3>Business / Research Challenge</h3>
+    <p>
+        Governments, hospitals, and policy teams needed insights to understand the severity of the pandemic. Key 
+        analytical questions included:
+    </p>
+
+    <ul>
+        <li>Which countries had the highest infection and death rates?</li>
+        <li>How fast were populations getting vaccinated?</li>
+        <li>Which regions showed the highest risk?</li>
+        <li>What trends emerged in cumulative vaccination progress?</li>
+    </ul>
+
+    <h3>Analytical Approach</h3>
+    <ul>
+        <li>Cleaned & standardized missing data (continent NULL handling)</li>
+        <li>Used aggregations to calculate infection and death percentages</li>
+        <li>Performed joins between deaths & vaccination tables</li>
+        <li>Created CTEs and Window Functions for rolling vaccination counts</li>
+        <li>Built temporary tables for deeper exploration</li>
+        <li>Created a reusable view for population vaccination percentage</li>
+    </ul>
+
+    <h3>Key Insights</h3>
+    <ul>
+        <li>Some nations experienced infection rates above <strong>30% of their total population</strong>.</li>
+        <li>Death rates varied significantly by continent, highlighting resource inequality.</li>
+        <li>Rolling vaccination analysis revealed large differences in vaccine rollout speed.</li>
+        <li>Global mortality percentage provided perspective on pandemic severity.</li>
+    </ul>
+
+    <h3>Impact</h3>
+    <p>
+        This SQL exploration demonstrates analytical competency in handling large datasets, extracting meaningful 
+        health insights, and building structures (CTEs, Views, Temp Tables) that support scalable reporting.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>🛠️ Tools Used</h2>
+    <ul>
+        <li>MySQL Database</li>
+        <li>Joins & Aggregations</li>
+        <li>Window Functions</li>
+        <li>CTEs & Temporary Tables</li>
+        <li>Views for reporting</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <a class="btn" href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" target="_blank">
+        View GitHub Repository
+    </a>
+</section>
+
+</body>
+</html>

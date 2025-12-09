@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdventureWorks Sales Analysis – Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+    background-color:#0f1724;
+    font-family:Inter,Arial;
+}
+@media (max-width: 600px){
+    .button-row {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+}
+/* Card-like section */
+.project-section{
+    background:white;
+    padding:25px;
+    margin:20px auto;
+    max-width:900px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Hero section */
+.project-hero{
+    background:white;
+    padding:40px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:30px auto;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image resize */
+.project-image{
+    width:96%;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Button style */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+.btn:hover{
+    background:#005fcc;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between; /* pushes buttons to both ends */
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="project-hero">
+    <h1>AdventureWorks Sales Analysis – Interactive Excel Dashboard</h1>
+    <p>A business-focused case study analyzing multi-year sales performance using interactive Excel dashboards.</p>
+</section>
+
+<section class="project-section">
+    <h2>📘 Project Overview</h2>
+    <p>
+        This project presents an interactive Excel dashboard designed to help AdventureWorks understand its sales 
+        performance across products, customers, time periods, and regions. Using advanced formulas, Pivot Tables, 
+        slicers, and macros, I converted raw sales data into a dynamic decision-support tool.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>📊 Case Study: Solving a Real Business Problem</h2>
+
+    <h3>Business Challenge</h3>
+    <p>
+        AdventureWorks’ leadership needed a consolidated view of overall sales performance. Their existing reporting 
+        was fragmented, making it difficult to answer key business questions:
+    </p>
+
+    <ul>
+        <li>Which product categories produce the highest profit margins?</li>
+        <li>What customer age groups contribute most to revenue?</li>
+        <li>Which regions generate consistent growth?</li>
+        <li>How does performance vary across years, months, and weekdays?</li>
+    </ul>
+
+    <h3>Analytical Approach</h3>
+    <p>I implemented a structured analytical workflow:</p>
+    <ul>
+        <li>Cleaned & standardized raw sales data</li>
+        <li>Created Pivot Tables and Pivot Charts for multi-variable exploration</li>
+        <li>Used advanced Excel formulas (INDEX-MATCH, IFS, logical expressions)</li>
+        <li>Added slicers for real-time filtering</li>
+        <li>Built two dashboards (Time Analysis & Detail Analysis)</li>
+        <li>Automated navigation with macros</li>
+    </ul>
+
+    <h3>Key Business Insights</h3>
+    <ul>
+        <li>High-priced products (> $150) contribute <strong>95% of total profit</strong>.</li>
+        <li>Customers aged <strong>51+ account for 47% of all revenue</strong>.</li>
+        <li>The years 2007–2008 generated <strong>67% of total profits</strong>.</li>
+        <li>U.S. & Australia combined account for <strong>62.7% of profits</strong>.</li>
+        <li>Weekday performance drives 72% of overall profit.</li>
+    </ul>
+
+    <h3>Business Impact</h3>
+    <p>
+        The company can now confidently prioritize profitable demographic groups, focus marketing on top-performing 
+        regions, and plan inventory based on high-value product segments. The dashboards provide instant answers for 
+        strategic planning.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>🛠️ Tools Used</h2>
+    <ul>
+        <li>Microsoft Excel</li>
+        <li>Pivot Tables & Pivot Charts</li>
+        <li>Slicers & Interactive Buttons</li>
+        <li>Advanced Formulas</li>
+        <li>Macros (VBA)</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>🖼️ Dashboards</h2>
+    <img src="images/Dashboard_Preview.png" class="project-image" alt="Time Analysis Dashboard Preview">
+<img src="images/Detail_Dashboard_Preview.png" class="project-image" alt="Detail Analysis Dashboard Preview">
+
+</section>
+
+<section class="project-section button-row">
+    <a class="btn" href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" target="_blank">
+        View GitHub Repository
+    </a>
+
+    <a class="btn" href="images/Video.mp4" target="_blank">
+        Watch Demo
+    </a>
+</section>
+
+</body>
+</html>

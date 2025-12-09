@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare Provider Performance – Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+    background-color:#0f1724;
+    font-family:Inter,Arial;
+}
+
+/* Card-like section */
+.project-section{
+    background:white;
+    padding:25px;
+    margin:20px auto;
+    max-width:900px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Hero section */
+.project-hero{
+    background:white;
+    padding:40px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:30px auto;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image resize */
+.project-image{
+    width:96%;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.compare-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+    max-width: 1200px;
+}
+
+.compare-row img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4); 
+    max-width: 550px; 
+}
+/* Button style */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+.btn:hover{
+    background:#005fcc;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between; /* pushes buttons to both ends */
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+<section class="project-hero">
+    <h1>Healthcare Provider Performance Analysis – Power BI</h1>
+    <p>A business intelligence case study improving revenue visibility and operational decision-making.</p>
+</section>
+
+<section class="project-section">
+    <h2>📘 Project Overview</h2>
+    <p>
+        This Power BI dashboard analyzes healthcare billing, patient demographics, treatment data, and insurance 
+        coverage. The goal: empower administrators to make informed decisions that reduce costs, improve service 
+        quality, and optimize revenue.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>📊 Case Study: Improving Financial & Operational Performance</h2>
+
+    <h3>Business Challenge</h3>
+    <p>
+        Healthcare leaders lacked unified visibility into billing trends, departmental performance, insurance impact, 
+        and weekday vs weekend service usage. Fragmented spreadsheets made analysis slow and inaccurate.
+    </p>
+
+    <h3>Key Questions</h3>
+    <ul>
+        <li>Which departments generate the most revenue?</li>
+        <li>How much do insurance providers cover?</li>
+        <li>Why does billing fluctuate across months, years, and days?</li>
+        <li>Where are opportunities for cost optimization?</li>
+    </ul>
+
+    <h3>Analytical Approach</h3>
+    <ul>
+        <li>Built a star-schema model (FactVisits + Dimensions)</li>
+        <li>Transformed data in Power Query (cleaning, merging, shaping)</li>
+        <li>Developed DAX measures for KPI calculations</li>
+        <li>Designed Light & Dark dashboards for better usability</li>
+        <li>Created separate Trend and Detail dashboards</li>
+    </ul>
+
+    <h3>Key Insights</h3>
+    <ul>
+        <li><strong>66% of billing</strong> is covered by insurance.</li>
+        <li>Weekday revenue is <strong>60% higher</strong> than weekends.</li>
+        <li>Cardiology + Orthopedics contribute <strong>70% of total billing</strong>.</li>
+        <li>YoY billing dropped <strong>29.6%</strong> due to seasonal decline.</li>
+        <li>Neurology shows steady positive growth (+13.6%).</li>
+    </ul>
+
+    <h3>Business Impact</h3>
+    <p>
+        The insights help administrators allocate resources effectively, strengthen high-revenue departments, and 
+        prepare targeted operational improvements. Weekend service expansion and focused patient engagement can 
+        improve Q3–Q4 performance.
+    </p>
+</section>
+
+<section class="project-section">
+    <h2>🛠️ Tools Used</h2>
+    <ul>
+        <li>Power BI Desktop</li>
+        <li>Power Query Editor</li>
+        <li>DAX</li>
+        <li>Star Schema Modeling</li>
+        <li>Interactive Visualization Design</li>
+    </ul>
+</section>
+
+<section class="project-section">
+    <h2>🖼️ Dashboards</h2>
+
+    <h3>Detail Dashboard</h3>
+    <div class="compare-row">
+        <img src="images/Detail_Light.png" alt="Detail Light Mode">
+        <img src="images/Detail_Dark.png" alt="Detail Dark Mode">
+    </div>
+
+    <h3>Trend Dashboard</h3>
+    <div class="compare-row">
+        <img src="images/Trend_Light.png" alt="Trend Light Mode">
+        <img src="images/Trend_Dark.png" alt="Trend Dark Mode">
+    </div>
+</section>
+
+
+<section class="project-section button-row">
+    <a class="btn" href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" target="_blank">
+        View GitHub Repository
+    </a>
+
+    <a class="btn" href="images/Healthcare_Provider_Dashboard.mp4" target="_blank">
+        Watch Demo
+    </a>
+</section>
+
+</body>
+</html>

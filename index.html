@@ -51,8 +51,14 @@
 }
 @media (max-width: 768px) {
   .project-grid {
-    grid-template-columns: 1fr;
-  }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: stretch;   /* ✅ ensures equal height */
+}
+
 }
 /* Resize all dashboard images */
 .project-image {
@@ -115,13 +121,16 @@ width: 100%;
 
     display: flex;
     flex-direction: column;
+    height: 100%;   /* ✅ KEY FIX */
 }
 
 .project-card img {
-    height: 150px;   /* ← set a fixed equal height */
+    width: 100%;
+    height: 160px;        /* equal height for all */
     object-fit: contain;
     margin-bottom: 15px;
 }
+
 
 .project-card h3 {
     font-size: 1.3rem;
@@ -131,8 +140,9 @@ width: 100%;
 .project-card p {
     font-size: 0.95rem;
     margin-bottom: 20px;
-    flex-grow: 1;    /* ensures descriptions stretch equally */
+    flex-grow: 1;   /* keeps buttons aligned */
 }
+
 
 .project-card .btn {
     align-self: center;  /* centers the button */
@@ -167,8 +177,8 @@ width: 100%;
     <main>
       <section class="hero">
         <div>
-          <h1>Turning Data Into Decisions</h1>
-          <p>Data Analyst skilled in Excel, SQL, Power BI and Python. I build clear dashboards, write efficient SQL, and transform messy data into actionable insights.</p>
+          <h1>Turning Business Data Into Actionable Decisions</h1>
+          <p>Data Analyst skilled in Excel, SQL, and Power BI. I analyze business data, build clear dashboards, and write efficient SQL to support data-driven decision-making.</p>
           <div class="cta">
             <a class="btn" href="#projects">View Projects</a>
             <a class="ghost" href="Anupadma_Resume.pdf" download>Download Resume</a>
@@ -182,7 +192,6 @@ width: 100%;
               <span class="skill">MySQL</span>
               <span class="skill">DAX</span>
               <span class="skill">Power Query</span>
-              <span class="skill">Python</span>
             </div>
           </div>
         </div>
@@ -223,19 +232,19 @@ width: 100%;
 <img src="images/Detail_Light.png" alt="Healthcare Project">
 </a>
 <h3>Healthcare Provider Performance Analysis</h3>
-<p>Power BI dashboard showing KPIs, provider efficiency & actionable insights.</p>
+<p>Power BI dashboard analyzing healthcare KPIs, provider efficiency, and operational performance.</p>
 <a class="btn" href="https://github.com/AnupadmaTheAnalyst/Healthcare-Provider-Performance-Dashboard" target="_blank">View</a>
 </div>
 
 
 <!-- PROJECT 2 -->
  <div class="project-card">
-<a href="covid.html" target="_blank">
-<img src="images/COVID.jpg" alt="COVID SQL Project">
+<a href="sales.html" target="_blank">
+<img src="images/sales.jpg" alt="Sales Analysis">
 </a>
-<h3>COVID‑19 SQL Data Exploration</h3>
-<p>SQL-based global COVID‑19 exploration including cases & vaccination trends.</p>
-<a class="btn" href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" target="_blank">View</a>
+<h3>Sales Performance & Customer Behavior Analysis (SQL Case Study)</h3>
+<p>Analyzing revenue trends, customer value, and deal size performance to support sales strategy and decision-making.</p>
+<a class="btn" href="https://github.com/AnupadmaTheAnalyst/Sales-Performance-Customer-Behavior-Analysis-using-SQL" target="_blank">View</a>
 </div>
 
 <!-- PROJECT 3 -->
@@ -248,6 +257,15 @@ width: 100%;
 <a class="btn" href="https://github.com/AnupadmaTheAnalyst/adventureworks-sales-analysis" target="_blank">View</a>
 </div>
 
+<!-- PROJECT 4 -->
+ <div class="project-card">
+<a href="covid.html" target="_blank">
+<img src="images/COVID.jpg" alt="COVID SQL Project">
+</a>
+<h3>COVID‑19 SQL Data Exploration</h3>
+<p>SQL-based data exploration analyzing global COVID-19 cases, mortality, and vaccination trends.</p>
+<a class="btn" href="https://github.com/AnupadmaTheAnalyst/SQL_Covid19_Data_Exploration" target="_blank">View</a>
+</div>
 
 </div>
       </section>
@@ -255,7 +273,7 @@ width: 100%;
       <section id="about">
         <h2 class="section">About Me</h2>
         <div class="card">
-          <p>I am a data analyst focused on converting messy data into clear, actionable reports. I enjoy problem solving, building dashboards that tell a story, and writing SQL queries that produce reliable insights. I am actively seeking fresher Data Analyst roles where I can apply Power BI, Excel and SQL to real business problems.</p>
+          <p>I am a data analyst focused on converting messy data into clear, actionable reports. I enjoy problem solving, building dashboards that tell a story, and writing SQL queries that produce reliable insights. I am actively seeking entry-level Data Analyst roles where I can apply Power BI, Excel, and SQL to solve real business problems.</p>
         </div>
       </section>
 
@@ -265,7 +283,7 @@ width: 100%;
           <div style="display:flex;gap:18px;flex-wrap:wrap">
             <div style="min-width:220px">
               <strong>Technical</strong>
-              <div class="meta">Power BI, Excel, MySQL, SQL, Power Query, DAX, Python</div>
+              <div class="meta">Power BI, Excel, MySQL, SQL, Power Query, DAX</div>
             </div>
             <div style="min-width:220px">
               <strong>BI & Reporting</strong>
